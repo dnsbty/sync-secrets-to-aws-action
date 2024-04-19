@@ -28,7 +28,7 @@ async function run() {
         core.setFailed('AWS credentials could not be found. Please make sure you configured credentials before calling this action.');
         break;
       default:
-        core.setFailed(error.message);
+        core.setFailed(message);
         break;
     }
   }

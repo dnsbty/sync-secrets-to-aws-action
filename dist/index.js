@@ -46939,7 +46939,7 @@ async function run() {
         _actions_core__WEBPACK_IMPORTED_MODULE_0__.setFailed('AWS credentials could not be found. Please make sure you configured credentials before calling this action.');
         break;
       default:
-        _actions_core__WEBPACK_IMPORTED_MODULE_0__.setFailed(error.message);
+        _actions_core__WEBPACK_IMPORTED_MODULE_0__.setFailed(message);
         break;
     }
   }
