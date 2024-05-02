@@ -9,8 +9,8 @@ async function run() {
     // Get secrets into {key: value} object
     const secretStrings = secretsText.split('\n');
     const secrets = secretStrings.reduce((acc, str) => {
-      const [key, value] = str.split('=');
-      acc[key] = value;
+      const [key, ...value] = str.split('=');
+      acc[key] = value.join('=');
       return acc;
     }, {});
 
